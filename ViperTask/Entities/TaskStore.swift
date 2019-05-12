@@ -8,18 +8,17 @@
 import Foundation
 
 class TaskStore {
-    private init() {}
-    private static let shared = TaskStore()
+    public static let shared = TaskStore()
     
-    public private (set) var tasks: [Task]?
+    public private (set) var tasks: [Task] = []
     
     func addTask(_ task:Task){
-        tasks?.append(task)
+        tasks.append(task)
     }
     
     func deleteTask(_ task:Task){
-        if let index = tasks?.firstIndex(where: { $0 === task }){
-            tasks?.remove(at: index)
+        if let index = tasks.firstIndex(where: { $0 === task }){
+            tasks.remove(at: index)
         }
     }
 }

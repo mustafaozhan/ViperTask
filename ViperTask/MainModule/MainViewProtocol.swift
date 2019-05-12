@@ -22,11 +22,12 @@ protocol MainPresenterProtocol: class{
     
     // View -> Presenter
     func viewWillAppear()
+    func showTaskDetail(_ task: Task)
     func addTask(_ task: Task)
     func removeTask(_ task: Task)
 }
 
-protocol MainInteractorInputProtocol: class{
+protocol MainInteractorInputProtocol: class {
     var presenter: MainInteractorOutputProtocol? { get set }
     
     // Presenter -> Interactor
@@ -45,4 +46,6 @@ protocol MainInteractorOutputProtocol: class{
 
 protocol MainRouterProtocol: class {
     static func createTaskListModule() -> UIViewController
+    
+    func presentTaskDetailScreen(from view: MainViewProtocol, for task: Task)
 }

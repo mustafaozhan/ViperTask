@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C39504222889D8800C4058E /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C39504122889D8800C4058E /* MainInteractor.swift */; };
+		5C3950442288A29600C4058E /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3950432288A29600C4058E /* MainPresenter.swift */; };
+		5C3950462288A3EC00C4058E /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3950452288A3EC00C4058E /* MainRouter.swift */; };
 		5C55A7772288624600FB6F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55A7762288624600FB6F3B /* AppDelegate.swift */; };
 		5C55A7792288624600FB6F3B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55A7782288624600FB6F3B /* MainViewController.swift */; };
 		5C55A77C2288624600FB6F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C55A77A2288624600FB6F3B /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C39504122889D8800C4058E /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		5C3950432288A29600C4058E /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		5C3950452288A3EC00C4058E /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		5C55A7732288624500FB6F3B /* ViperTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C55A7762288624600FB6F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C55A7782288624600FB6F3B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +98,9 @@
 			children = (
 				5C55A7782288624600FB6F3B /* MainViewController.swift */,
 				5C55A7AE22886BD500FB6F3B /* MainViewProtocol.swift */,
+				5C39504122889D8800C4058E /* MainInteractor.swift */,
+				5C3950432288A29600C4058E /* MainPresenter.swift */,
+				5C3950452288A3EC00C4058E /* MainRouter.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -176,10 +185,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C55A7792288624600FB6F3B /* MainViewController.swift in Sources */,
+				5C3950462288A3EC00C4058E /* MainRouter.swift in Sources */,
 				5C55A7AB2288682A00FB6F3B /* Task.swift in Sources */,
 				5C55A7AD2288692B00FB6F3B /* TaskStore.swift in Sources */,
 				5C55A7772288624600FB6F3B /* AppDelegate.swift in Sources */,
 				5C55A7AF22886BD500FB6F3B /* MainViewProtocol.swift in Sources */,
+				5C3950442288A29600C4058E /* MainPresenter.swift in Sources */,
+				5C39504222889D8800C4058E /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
