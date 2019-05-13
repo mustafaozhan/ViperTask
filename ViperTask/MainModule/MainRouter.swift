@@ -30,7 +30,13 @@ class MainRouter: MainRouterProtocol {
     }
     
     func presentTaskDetailScreen(from view: MainViewProtocol, for task: Task) {
-        // todo
+        let taskDetailVC = DetailRouter.createTaskDetailRouterModule(with: task)
+        
+        guard let viewVC = view as? UIViewController else {
+            fatalError("Invalid View Protocol type")
+        }
+        
+        viewVC.navigationController?.pushViewController(taskDetailVC, animated: true)
     }
     
     

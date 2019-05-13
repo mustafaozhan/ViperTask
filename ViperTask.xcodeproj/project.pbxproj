@@ -18,6 +18,8 @@
 		5C55A7AB2288682A00FB6F3B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55A7AA2288682A00FB6F3B /* Task.swift */; };
 		5C55A7AD2288692B00FB6F3B /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55A7AC2288692B00FB6F3B /* TaskStore.swift */; };
 		5C55A7AF22886BD500FB6F3B /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55A7AE22886BD500FB6F3B /* MainViewProtocol.swift */; };
+		5C7E00CF2289D3B200E4C659 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E00CE2289D3B200E4C659 /* DetailViewController.swift */; };
+		5C7E00D12289D79700E4C659 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E00D02289D79700E4C659 /* DetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		5C55A7AA2288682A00FB6F3B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5C55A7AC2288692B00FB6F3B /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		5C55A7AE22886BD500FB6F3B /* MainViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
+		5C7E00CE2289D3B200E4C659 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5C7E00D02289D79700E4C659 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		5C55A7752288624500FB6F3B /* ViperTask */ = {
 			isa = PBXGroup;
 			children = (
+				5C7E00CD2289D05600E4C659 /* DetailModule */,
 				5C55A7A9228866D100FB6F3B /* Entities */,
 				5C55A7A82288665700FB6F3B /* MainModule */,
 				5C55A7A5228863A800FB6F3B /* Resources */,
@@ -112,6 +117,15 @@
 				5C55A7AC2288692B00FB6F3B /* TaskStore.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		5C7E00CD2289D05600E4C659 /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				5C7E00CE2289D3B200E4C659 /* DetailViewController.swift */,
+				5C7E00D02289D79700E4C659 /* DetailRouter.swift */,
+			);
+			path = DetailModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7E00CF2289D3B200E4C659 /* DetailViewController.swift in Sources */,
 				5C55A7792288624600FB6F3B /* MainViewController.swift in Sources */,
 				5C3950462288A3EC00C4058E /* MainRouter.swift in Sources */,
 				5C55A7AB2288682A00FB6F3B /* Task.swift in Sources */,
 				5C55A7AD2288692B00FB6F3B /* TaskStore.swift in Sources */,
+				5C7E00D12289D79700E4C659 /* DetailRouter.swift in Sources */,
 				5C55A7772288624600FB6F3B /* AppDelegate.swift in Sources */,
 				5C55A7AF22886BD500FB6F3B /* MainViewProtocol.swift in Sources */,
 				5C3950442288A29600C4058E /* MainPresenter.swift in Sources */,
