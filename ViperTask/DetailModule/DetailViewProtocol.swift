@@ -16,8 +16,8 @@ protocol DetailViewProtocol: class {
 
 protocol DetailPresenterProtocol: class {
     var view: DetailViewProtocol? { get set }
-    var interactor: DetailInteractorInputProtocol { get set }
-    var roouter: DetailRouterProotocol { get set }
+    var interactor: DetailInteractorInputProtocol? { get set }
+    var router: DetailRouterProtocol? { get set }
     
     // View -> Presenter
     func viewDidLoad()
@@ -31,7 +31,7 @@ protocol DetailInteractorInputProtocol: class {
     
     // Presenter -> Interactor
     func deleteTask()
-    func didEditTask(title: String, content: String)
+    func editTask(title: String, content: String)
 }
 
 protocol DetailInteractorOutputProtocol: class {
@@ -40,7 +40,7 @@ protocol DetailInteractorOutputProtocol: class {
     func didEditTask(_ task: Task)
 }
 
-protocol DetailRouterProotocol: class {
+protocol DetailRouterProtocol: class {
     static func createTaskDetailRouterModule(with task: Task) -> UIViewController
     
     // Presenter -> Router

@@ -21,6 +21,8 @@
 		5C7E00CF2289D3B200E4C659 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E00CE2289D3B200E4C659 /* DetailViewController.swift */; };
 		5C7E00D12289D79700E4C659 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E00D02289D79700E4C659 /* DetailRouter.swift */; };
 		5C7E00D32289DD4800E4C659 /* DetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E00D22289DD4800E4C659 /* DetailViewProtocol.swift */; };
+		5C7E00D52289E3C300E4C659 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E00D42289E3C300E4C659 /* DetailPresenter.swift */; };
+		5C7E00D7228A000B00E4C659 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E00D6228A000B00E4C659 /* DetailInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		5C7E00CE2289D3B200E4C659 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5C7E00D02289D79700E4C659 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		5C7E00D22289DD4800E4C659 /* DetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProtocol.swift; sourceTree = "<group>"; };
+		5C7E00D42289E3C300E4C659 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		5C7E00D6228A000B00E4C659 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				5C7E00CE2289D3B200E4C659 /* DetailViewController.swift */,
 				5C7E00D02289D79700E4C659 /* DetailRouter.swift */,
 				5C7E00D22289DD4800E4C659 /* DetailViewProtocol.swift */,
+				5C7E00D42289E3C300E4C659 /* DetailPresenter.swift */,
+				5C7E00D6228A000B00E4C659 /* DetailInteractor.swift */,
 			);
 			path = DetailModule;
 			sourceTree = "<group>";
@@ -209,9 +215,11 @@
 				5C7E00D32289DD4800E4C659 /* DetailViewProtocol.swift in Sources */,
 				5C7E00D12289D79700E4C659 /* DetailRouter.swift in Sources */,
 				5C55A7772288624600FB6F3B /* AppDelegate.swift in Sources */,
+				5C7E00D7228A000B00E4C659 /* DetailInteractor.swift in Sources */,
 				5C55A7AF22886BD500FB6F3B /* MainViewProtocol.swift in Sources */,
 				5C3950442288A29600C4058E /* MainPresenter.swift in Sources */,
 				5C39504222889D8800C4058E /* MainInteractor.swift in Sources */,
+				5C7E00D52289E3C300E4C659 /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
